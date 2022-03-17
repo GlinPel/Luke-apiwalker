@@ -1,4 +1,4 @@
-import DinamicRouter from "./DinamicRouter";
+import Starwars from "./Starwars";
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,17 +10,11 @@ function App() {
   return (
     <Router>
       <Switch>
-      <Route path="/:message/:color1/:color2">
-          <DinamicRouter />
-        </Route>
-        <Route path="/:message/:color1">
-          <DinamicRouter />
-        </Route>
-        <Route path="/:message">
-          <DinamicRouter />
+        <Route path="/:id">
+          <Starwars />
         </Route>
         <Route path="/">
-          <DinamicRouter />
+          <Starwars />
         </Route>
       </Switch>
     </Router>
